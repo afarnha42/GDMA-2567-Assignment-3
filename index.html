@@ -21,21 +21,23 @@
 				<ul>
 					<li><a href="#about">about</a></li>
 					<li><a href="#roasts">roasts</a></li>
-					<li><a href="#"><h1><img alt="logo"></h1></a></li><! -- logo will go here -->
+					<li><a href="#"><h1><img src="img/tf-logo-sm-display.png" alt="logo"></h1></a></li>
 					<li><a href="#process">process</a></li>
 					<li><a href="#connect">connect</a></li>
 				</ul>
 			</nav>
-			<div class="row">
-				<div class="row col-sm-12 col-md-10">
-					<div class="col-sm-2 col-md-4">
+			<div class="row col-sm-12 col-md-10">
+				<div class="row col-sm-4">
+					<div id="98" class="col-sm-2 col-md-4">
 						<p>98</p>
 					</div>
-					<div class="col-sm-2 col-md-4">
+					<div id="house" class="col-sm-2 col-md-4">
 						<p>house<br>blend<br>coffee<br>rating</p>
 					</div>
 				</div>
-				<div class="col-sm-2 col-md-4"> <img alt="bag of coffee"></div>
+				<div class="col-sm-2 col-md-4">
+					<img src="img/pkging.png" alt="bag of coffee">
+				</div>
 				<div class="row col-sm-2 col-md-4">
 					<div class="col-sm-2 col-md-4">
 						<p>17.96</p>
@@ -50,30 +52,38 @@
 		</div>
 	</header>
 	
-	<div id="about" class="wrapper row">
-		<section class="col-sm-12 col-md-6 col-lg-4">
-			<header>
+	<div id="about" class="row">
+		<section class="col-sm-12 col-md-6 col-lg-4 bg-pnk">
+			<div class="wrapper">
+				<header>
 				<h2>small. dedicated. highly focused on quality.</h2>
-			</header>
-			<p>Twin Finch is an authentic mirco-roastery.  We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home.</p>
+				</header>
+				<p>Twin Finch is an authentic mirco-roastery.  We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home.</p>
+			</div>
 		</section>
 		
 		<section class="col-sm-12 col-md-6 col-lg-4">
-			<header>
+			<div class="wrapper">
+				<header>
 				<h2>we only ship the freshest coffee.</h2>
-			</header>
-			<p>We only ship the freshest coffee and your satisfaction is guaranteed.  We only ship whole beansm but will grind upon request in-store. </p>
-			<p>For help brewing the perfect cup, click <a href="https://www.ncausa.org/About-Coffee/How-to-Brew-Coffee" target="_blank">here</a></p>
+				</header>
+				<p>We only ship the freshest coffee and your satisfaction is guaranteed.  We only ship whole beansm but will grind upon request in-store. </p>
+				<p>For help brewing the perfect cup, click <a href="https://www.ncausa.org/About-Coffee/How-to-Brew-Coffee" target="_blank">here</a></p>
+			</div>
+			
 		</section>
 		
-		<section id="process" class="col-sm-12 col-md-6 col-lg-4">
-			<header>
+		<section id="process" class="col-sm-12 col-md-6 col-lg-4 bg-teal">
+			<div class="wrapper">
+				<header>
 				<h2>roasted with an extraordinary level of control.</h2>
 			</header>
 			<p>We roast in a hot air, refractory lined roaster. While most small coffee roasters use a single stage burner which offers virtually no control, our process significantly reduces hot spots for a more evenly roasting coffee bean.</p>
+			</div>
+			
 		</section>
 		
-		<blockquote class="col-sm-12 col-md-6 col-lg-12">
+		<blockquote class="row col-sm-10 col-md-6 col-lg-12">
 			<p>This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.</p>
 			<footer>
 				<p><a href="https://www.coffeereview.com/" target="_blank">&mdash;coffee review</a></p> 
@@ -83,26 +93,28 @@
 	</div>
 	
 	<section id="roasts" class="wrapper">
-		<header>
+		<header class="bg-blk">
 			<h2>find your roast</h2>
 		</header>
 		<div class="row">
-			<section class="row col-sm-12 col-md-6 col-lg-4">
-				<header>
+			<section class="row col-sm-12 col-lg-4">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<header>
 					<h3>seasonal brew</h3>
 					<p>Our rotating, featured coffees are roasted on a more limited basis. your order may be held until the next time a batch hits the roaster.</p>
-				</header>
-				<section>
+					</header>
+				</div>
+				<section class="col-sm-12 col-md-6 col-lg-4">
 					<header>
-						<p><i class="fas fa-cloud-moon"></i></p> 
-						<p>eastern java, indonesia</p>
+						<p><i class="fas fa-cloud-moon fa-4x"></i></p> 
+						<p class="origin">eastern java, indonesia</p>
 						<h3>evening oak</h3>
 					</header>
 					
 					<div class="row">
 						<div class="col-sm-6 col-md-3 col-lg-2">
 							<p><span>19.95</span>per pound</p>
-							<p><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i></p> 
+							<p class="levels"><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint" style="color:#fff;"></i></p> 
 						</div>
 						<div class="col-sm-6 col-md-3 col-lg-2">
 							<p>pungently rich &plus; complex</p>
@@ -115,17 +127,17 @@
 				
 				</section>
 			</section>
-				<section class="col-sm-12 col-md-6 col-lg-4">
+				<section class="bg-teal col-sm-12 col-md-6 col-lg-4">
 					<header>
-						<p><i class="far fa-sun"></i></p> 
-						<p>las chiapas, mexico</p>
+						<p><i class="far fa-sun fa-4x"></i></p> 
+						<p class="origin">las chiapas, mexico</p>
 						<h3>sunrise</h3>
 					</header>
 					
 					<div class="row">
 						<div class="col-sm-6 col-md-3 col-lg-2">
 							<p><span>17.95</span>per pound</p>
-							<p><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i></p> 
+							<p class="levels"><i class="fas fa-tint"></i><i class="fas fa-tint" style="color:#fff;"></i><i class="fas fa-tint" style="color:#fff;"></i><i class="fas fa-tint" style="color:#fff;"></i></p> 
 						</div>
 						<div class="col-sm-6 col-md-3 col-lg-2">
 							<p>light, fruity, acidity</p>
@@ -136,17 +148,17 @@
 					<p><a href="#" class="btn">buy</a></p>
 				</section>
 				
-				<section class="col-sm-12 col-md-6 col-lg-4">
+				<section class="bg-teal col-sm-12 col-md-6 col-lg-4">
 					<header>
-						<p><i class="fas fa-kiwi-bird"></i></p>
-						<p>cajamarca &plus; myobamba, peru</p>
+						<p><i class="fas fa-kiwi-bird fa-4x"></i></p>
+						<p class="origin">cajamarca &plus; myobamba, peru</p>
 						<h3>finch house</h3>
 					</header>
 					
 					<section class="row">
 						<div class="col-sm-6 col-md-3 col-lg-2">
 							<p><span>17.95</span>per pound</p>
-							<p><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i></p>
+							<p class="levels"><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint" style="color:#fff;"></i><i class="fas fa-tint" style="color: #fff;"></i></p>
 						</div>
 						<div class="col-sm-6 col-md-3 col-lg-2">
 							<p>hint of citrus</p>
@@ -159,17 +171,17 @@
 					</div>
 				</section>
 				
-				<section class="col-sm-12 col-md-6 col-lg-4">
+				<section class="bg-teal col-sm-12 col-md-6 col-lg-4">
 					<header>
-						<p><i class="fas fa-mug-hot"></i></p>
-						<p>latin america, africa &plus; indonesia</p>
+						<p><i class="fas fa-mug-hot fa-4x"></i></p>
+						<p class="origin">latin america, africa &plus; indonesia</p>
 						<h3>espresso</h3>
 					</header>
 					
 					<section class="row">
 						<div class="col-sm-6 col-md-3 col-lg-2">
 							<p><span>19.95</span>per pound</p>
-							<p><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i></p>
+							<p class="levels"><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint" style="color:#fff;"></i></p>
 						</div>
 						<div class="col-sm-6 col-md-3 col-lg-2">
 							<p>clean &plus; a little roasty</p>
@@ -182,17 +194,17 @@
 					</div>
 				</section>
 			
-				<section class="col-sm-12 col-md-6 col-lg-4">
+				<section class="bg-teal col-sm-12 col-md-6 col-lg-4">
 					<header>
 						<p><i class="far fa-moon"></i></p> 
-						<p> latin america</p>
+						<p class="origin"> latin america</p>
 						<h3>midnight</h3>
 					</header>
 					
 					<section class="row">
 						<div class="col-sm-6 col-md-3 col-lg-2">
 							<p><span>17.95</span>per pound</p>
-							<p><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i></p>
+							<p class="levels"><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i></p>
 						</div>
 						<div class="col-sm-6 col-md-3 col-lg-2">
 							<p>double roasted</p>
@@ -207,7 +219,7 @@
 		</div>
 	</section>
 	
-	<div class="row col-sm-12 col-lg-8"> <! -- this doesn't feel right... -->
+	<div class="bg-pnk row col-sm-12 col-lg-8"> <! -- this doesn't feel right... -->
 		<ul>
 			<li>whole beans shipped to your home</li>
 			<li>3 day shipping</li>

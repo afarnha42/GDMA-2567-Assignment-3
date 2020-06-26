@@ -54,6 +54,9 @@
 
 html {
 	font-family: 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 12px;
 }
 
 /*--------------------------------------------------------------
@@ -65,8 +68,10 @@ a {
 }
 
 p {
+	font-weight: 300;
 	font-size: 1rem;
 	line-height: 2.25em;
+	text-transform: none;
 
 }
 
@@ -74,9 +79,14 @@ p {
 /* -- FORMS -- */
 
 /* -- LISTS -- */
-nav li {
+li {
 	display: inline-block;
 }
+nav li {
+	font-size: .75rem;
+	
+}
+
 
 /*--------------------------------------------------------------
 5.0 - OBJECTS
@@ -101,16 +111,85 @@ nav li {
 
 
 /* -- BUTTONS -- */
+.btn {
+	text-transform: uppercase;
+	border-bottom: solid 5px;
+	font-weight: 800;
+	font-color: #1a1a1a;
+}
 
 
 /* -- HEADER -- */
+h1 {
+	position: relative;
+	top: 20px;
+}
+
+h2 {
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+}
+
+h3 {
+	font-size: 2.75rem;
+	letter-spacing: .25rem;
+	margin: 20px;
+}
 
 /* -- NAVIGATION -- */
 nav li {
 	text-transform: uppercase;
 }
 
+nav {
+	align-content: center;
+}
 
+nav li a {
+	color: #1a1a1a;
+}
+nav li a:hover {
+	color: #fff;
+}
+
+#98 p {
+	font-size: 6.25rem;
+}
+
+#house p {
+	line-height: 1.25rem;
+}
+
+#about section div {
+	padding: 150px 0;
+}
+
+#about a {
+	font-weight: 400;
+	color: #1a1a1a;
+}
+
+#about a:hover {
+	color: #cde2e0;
+}
+
+#roasts h2 {
+	padding: 20px 0;
+}
+
+#roasts span {
+	font-weight: 400;
+	padding-right: 5px;
+}
+
+.origin {
+	text-transform: uppercase;
+	
+}
+
+.levels i {
+	margin: 2px;
+}
 /*--------------------------------------------------------------
 7.0 - UTILITIES
 -------------------------------------------------------------- */
@@ -122,6 +201,14 @@ nav li {
 /* -- COLOR -- */
 .bg-teal {
 	background-color: #CDE2E0;
+}
+.bg-pnk {
+	background-color: #ffe3e5;
+}
+
+.bg-blk {
+	background-color: #1a1a1a;
+	color: #fff;
 }
 
 /* -- SIZE -- */
