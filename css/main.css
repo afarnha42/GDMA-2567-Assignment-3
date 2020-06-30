@@ -237,8 +237,7 @@ nav li a:hover {
 	font-weight: 400;
 	text-align: right;
 	margin: 0;
-	
-	line-height: 6rem;
+	line-height: 3.5rem;
 
 	
 }
@@ -383,9 +382,9 @@ footer ul {
 -------------------------------------------------------------- */
 .border {
    
-	margin-top: 7em;
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
+	margin-top: 2rem;
+    border-top: 4px solid #1a1a1a;
+    border-bottom: 4px solid #1a1a1a;
     padding: 20px 0px;
 }
 
