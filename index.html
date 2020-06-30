@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
 	<header class="bg-teal">
 		<div class="wrapper">
 			<nav>
@@ -26,37 +27,38 @@
 					<li><a href="#connect">connect</a></li>
 				</ul>
 			</nav>
-			<div class="row col-sm-12 col-md-10">
+			<div class="row col-sm-12">
 				<div class="row col-sm-4">
-					<div id="98" class="col-sm-2 col-md-4">
+					<div id="number">
 						<p>98</p>
 					</div>
-					<div id="house" class="col-sm-2 col-md-4">
+					<div id="house">
 						<p>house<br>blend<br>coffee<br>rating</p>
 					</div>
 				</div>
-				<div class="col-sm-2 col-md-4">
-					<img src="img/pkging.png" alt="bag of coffee">
+
+				<div class="col-sm-4">
+					<img src="img/pkging.png" alt="bag of coffee" class="img-responsive">
 				</div>
-				<div class="row col-sm-2 col-md-4">
-					<div class="col-sm-2 col-md-4">
-						<p>17.96</p>
-						<p>per pound</p>
+				<div class="row col-sm-4">
+					<div id="price">
+						<p><span>17.95</span><br>per pound</p>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-sm-6">
 						<p class="btn"><a href="https://www.shopify.com/" target="_blank">buy</a></p>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
 	</header>
+
 	
-	<div id="about" class="row">
-		<section class="col-sm-12 col-md-6 col-lg-4 bg-pnk">
-			<div class="wrapper">
+	<div id="about">
+		<section class="row col-sm-12 col-md-6 col-lg-4 bg-pnk">
+			<div class="wrapper row">
 				<header>
-				<h2>small. dedicated. highly focused on quality.</h2>
+					<h2>small. dedicated. <br>highly focused on <br>quality.</h2>
 				</header>
 				<p>Twin Finch is an authentic mirco-roastery.  We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home.</p>
 			</div>
@@ -65,46 +67,50 @@
 		<section class="col-sm-12 col-md-6 col-lg-4">
 			<div class="wrapper">
 				<header>
-				<h2>we only ship the freshest coffee.</h2>
+					<h2>we only ship the <br>freshest coffee.</h2>
 				</header>
-				<p>We only ship the freshest coffee and your satisfaction is guaranteed.  We only ship whole beansm but will grind upon request in-store. </p>
+				<p>We only ship the freshest coffee and your satisfaction is guaranteed.  We only ship whole beans but will grind upon request in-store. </p>
 				<p>For help brewing the perfect cup, click <a href="https://www.ncausa.org/About-Coffee/How-to-Brew-Coffee" target="_blank">here</a></p>
 			</div>
 			
 		</section>
 		
-		<section id="process" class="col-sm-12 col-md-6 col-lg-4 bg-teal">
-			<div class="wrapper">
-				<header>
-				<h2>roasted with an extraordinary level of control.</h2>
-			</header>
-			<p>We roast in a hot air, refractory lined roaster. While most small coffee roasters use a single stage burner which offers virtually no control, our process significantly reduces hot spots for a more evenly roasting coffee bean.</p>
-			</div>
+		<div class="row">
+			<section id="process" class="col-sm-12 col-md-6 col-lg-4 bg-teal">
+				<div class="wrapper">
+					<header>
+						<h2>roasted with an <br>extraordinary level <br>of control.</h2>
+					</header>
+					<p>We roast in a hot air, refractory lined roaster. While most small coffee roasters use a single stage burner which offers virtually no control, our process significantly reduces hot spots for a more evenly roasting coffee bean.</p>
+				</div>
+			</section>
+
+			<blockquote class="row col-sm-10 col-md-6 col-lg-12">
+				<p>This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.</p>
+				<footer>
+					<p><a href="https://www.coffeereview.com/" target="_blank">&mdash;coffee review</a></p> 
+				</footer>
+			</blockquote>
 			
-		</section>
+		</div>
 		
-		<blockquote class="row col-sm-10 col-md-6 col-lg-12">
-			<p>This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.</p>
-			<footer>
-				<p><a href="https://www.coffeereview.com/" target="_blank">&mdash;coffee review</a></p> 
-			</footer>
-		</blockquote>
 		
 	</div>
 	
 	<section id="roasts" class="wrapper">
-		<header class="bg-blk">
-			<h2>find your roast</h2>
-		</header>
-		<div class="row">
-			<section class="row col-sm-12 col-lg-4">
-				<div class="col-sm-12 col-md-6 col-lg-4">
-					<header>
-					<h3>seasonal brew</h3>
-					<p>Our rotating, featured coffees are roasted on a more limited basis. your order may be held until the next time a batch hits the roaster.</p>
+			<header class="bg-blk">
+				<h2>find your roast</h2>
+			</header>
+		
+		<div class="wrapper row">
+			<section class="row col-sm-12 col-md-12 col-lg-4">
+				<div id="seasonal" class="col-sm-12 col-md-6 col-lg-4">
+					<header class="col-sm-12 col-md-6">
+						<h3>seasonal brew</h3>
+						<p>Our rotating, featured coffees are roasted on a more limited basis. your order may be held until the next time a batch hits the roaster.</p>
 					</header>
 				</div>
-				<section class="col-sm-12 col-md-6 col-lg-4">
+				<section id="seasonal2" class="brew col-sm-12 col-md-6 col-lg-4">
 					<header>
 						<p><i class="fas fa-cloud-moon fa-4x"></i></p> 
 						<p class="origin">eastern java, indonesia</p>
@@ -112,11 +118,11 @@
 					</header>
 					
 					<div class="row">
-						<div class="col-sm-6 col-md-3 col-lg-2">
+						<div class="col-sm-6 col-md-6 col-lg-2 levels">
 							<p><span>19.95</span>per pound</p>
-							<p class="levels"><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint" style="color:#fff;"></i></p> 
+							<p><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint" style="color:#fff;"></i></p> 
 						</div>
-						<div class="col-sm-6 col-md-3 col-lg-2">
+						<div class="flavor col-sm-6 col-md-6 col-lg-2">
 							<p>pungently rich &plus; complex</p>
 							<p>night blooming flowers</p>
 							<p>coriander aroma </p>
@@ -127,114 +133,121 @@
 				
 				</section>
 			</section>
-				<section class="bg-teal col-sm-12 col-md-6 col-lg-4">
-					<header>
-						<p><i class="far fa-sun fa-4x"></i></p> 
-						<p class="origin">las chiapas, mexico</p>
-						<h3>sunrise</h3>
-					</header>
-					
-					<div class="row">
-						<div class="col-sm-6 col-md-3 col-lg-2">
-							<p><span>17.95</span>per pound</p>
-							<p class="levels"><i class="fas fa-tint"></i><i class="fas fa-tint" style="color:#fff;"></i><i class="fas fa-tint" style="color:#fff;"></i><i class="fas fa-tint" style="color:#fff;"></i></p> 
-						</div>
-						<div class="col-sm-6 col-md-3 col-lg-2">
-							<p>light, fruity, acidity</p>
-							<p>full, nutty body</p>
-							<p>unique spicy tones</p>
-						</div>
-					</div>
-					<p><a href="#" class="btn">buy</a></p>
-				</section>
-				
-				<section class="bg-teal col-sm-12 col-md-6 col-lg-4">
-					<header>
-						<p><i class="fas fa-kiwi-bird fa-4x"></i></p>
-						<p class="origin">cajamarca &plus; myobamba, peru</p>
-						<h3>finch house</h3>
-					</header>
-					
-					<section class="row">
-						<div class="col-sm-6 col-md-3 col-lg-2">
-							<p><span>17.95</span>per pound</p>
-							<p class="levels"><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint" style="color:#fff;"></i><i class="fas fa-tint" style="color: #fff;"></i></p>
-						</div>
-						<div class="col-sm-6 col-md-3 col-lg-2">
-							<p>hint of citrus</p>
-							<p>dark chocolate flavor</p>
-							<p>peanut and pepper notes</p>
-						</div>
-					</section>
-					<div>
-						<p><a href="#" class="btn">buy</a></p>
-					</div>
-				</section>
-				
-				<section class="bg-teal col-sm-12 col-md-6 col-lg-4">
-					<header>
-						<p><i class="fas fa-mug-hot fa-4x"></i></p>
-						<p class="origin">latin america, africa &plus; indonesia</p>
-						<h3>espresso</h3>
-					</header>
-					
-					<section class="row">
-						<div class="col-sm-6 col-md-3 col-lg-2">
-							<p><span>19.95</span>per pound</p>
-							<p class="levels"><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint" style="color:#fff;"></i></p>
-						</div>
-						<div class="col-sm-6 col-md-3 col-lg-2">
-							<p>clean &plus; a little roasty</p>
-							<p>sumptuous crema</p>
-							<p>unfussy &plus; delicious</p>
-						</div>
-					</section>
-					<div>
-						<p><a href="#" class="btn">buy</a></p>
-					</div>
-				</section>
-			
-				<section class="bg-teal col-sm-12 col-md-6 col-lg-4">
-					<header>
-						<p><i class="far fa-moon"></i></p> 
-						<p class="origin"> latin america</p>
-						<h3>midnight</h3>
-					</header>
-					
-					<section class="row">
-						<div class="col-sm-6 col-md-3 col-lg-2">
-							<p><span>17.95</span>per pound</p>
-							<p class="levels"><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i></p>
-						</div>
-						<div class="col-sm-6 col-md-3 col-lg-2">
-							<p>double roasted</p>
-							<p>big, bold &plus; dark</p>
-							<p>beans display oil</p>
-						</div>
-					</section>
-					<div>
-						<p><a href="#" class="btn">buy</a></p>
-					</div>
-				</section>
 		</div>
+		<div class="row bg-teal">
+			<section class="brew col-sm-12 col-md-6 col-lg-4">
+				<header>
+					<p><i class="far fa-sun fa-4x"></i></p> 
+					<p class="origin">las chiapas, mexico</p>
+					<h3>sunrise</h3>
+				</header>
+
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-2 levels">
+						<p><span>17.95</span>per pound</p>
+						<p><i class="fas fa-tint"></i><i class="fas fa-tint" style="color:#fff;"></i><i class="fas fa-tint" style="color:#fff;"></i><i class="fas fa-tint" style="color:#fff;"></i></p> 
+					</div>
+					<div class="flavor col-sm-6 col-md-6 col-lg-2">
+						<p>light, fruity, acidity</p>
+						<p>full, nutty body</p>
+						<p>unique spicy tones</p>
+					</div>
+				</div>
+				<p><a href="#" class="btn">buy</a></p>
+			</section>
+				
+			<section class="brew col-sm-12 col-md-6 col-lg-4">
+				<header>
+					<p><i class="fas fa-kiwi-bird fa-4x"></i></p>
+					<p class="origin">cajamarca &plus; myobamba, peru</p>
+					<h3>finch house</h3>
+				</header>
+
+				<section class="row">
+					<div class="col-sm-6 col-md-6 col-lg-2 levels">
+						<p><span>17.95</span>per pound</p>
+						<p><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint" style="color:#fff;"></i><i class="fas fa-tint" style="color: #fff;"></i></p>
+					</div>
+					<div class="flavor col-sm-6 col-md-6 col-lg-2">
+						<p>hint of citrus</p>
+						<p>dark chocolate flavor</p>
+						<p>peanut and pepper notes</p>
+					</div>
+				</section>
+					<div>
+						<p><a href="#" class="btn">buy</a></p>
+					</div>
+			</section>
+				
+			<section class="brew col-sm-12 col-md-6 col-lg-4">
+				<header>
+					<p><i class="fas fa-mug-hot fa-4x"></i></p>
+					<p class="origin">latin america, africa &plus; indonesia</p>
+					<h3>espresso</h3>
+				</header>
+
+				<section class="row">
+					<div class="col-sm-6 levels">
+						<p><span>19.95</span>per pound</p>
+						<p><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint" style="color:#fff;"></i></p>
+					</div>
+					<div class="flavor col-sm-6 col-md-3 col-lg-2">
+						<p>clean &plus; a little roasty</p>
+						<p>sumptuous crema</p>
+						<p>unfussy &plus; delicious</p>
+					</div>
+				</section>
+				<div>
+					<p><a href="#" class="btn">buy</a></p>
+				</div>
+			</section>
+			
+			<section class="col-sm-12 col-md-6 col-lg-4">
+				<header>
+					<p><i class="far fa-moon fa-4x"></i></p> 
+					<p class="origin"> latin america</p>
+					<h3>midnight</h3>
+				</header>
+
+				<section class="row">
+					<div class="col-sm-6 col-md-6 col-lg-2 levels">
+						<p><span>17.95</span>per pound</p>
+						<p><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i><i class="fas fa-tint"></i></p>
+					</div>
+					<div class="flavor col-sm-6 col-md-6 col-lg-2">
+						<p>double roasted</p>
+						<p>big, bold &plus; dark</p>
+						<p>beans display oil</p>
+					</div>
+				</section>
+				<div>
+					<p><a href="#" class="btn">buy</a></p>
+				</div>
+			</section>
+		</div>
+		
 	</section>
 	
-	<div class="bg-pnk row col-sm-12 col-lg-8"> <! -- this doesn't feel right... -->
-		<ul>
-			<li>whole beans shipped to your home</li>
-			<li>3 day shipping</li>
-			<li>satisfaction guaranteed</li>
-		</ul>
+	<div class="bg-pnk row col-sm-12 col-lg-8">
+		<div class="wrapper">
+			<ul>
+				<li>whole beans shipped to your home</li>
+				<li>3 day shipping</li>
+				<li>satisfaction guaranteed</li>
+			</ul>
+		</div>
 	</div>
 	
-	<footer class="bg-blk" id="connect"> 
+	<footer id="connect" class="bg-blk"> 
 		<div class="wrapper row">
 			<form class="col-sm-12 col-md-6">
-			<! -- form goes here -->
+				<label for="idvalue">Sign up for our monthly e-newsletter</label>
+				<input type="email" name="email" id="idvalue">
+				<p> <a href="#">submit</a></p>
 			</form>
 			<div class="col-sm-12 col-md-6">
-				<p><span>what are we up to?</span> Follow us</p> 
 				<ul>
+					<li><span>what are we up to?</span> follow us</li>
 					<li><i class="fab fa-twitter"></i></li>
 					<li><i class="fab fa-facebook-f"></i></li>
 					<li><i class="fab fa-instagram"></i></li>

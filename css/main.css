@@ -78,6 +78,7 @@ p {
 
 /* -- FORMS -- */
 
+
 /* -- LISTS -- */
 li {
 	display: inline-block;
@@ -88,11 +89,39 @@ nav li {
 }
 
 
+
 /*--------------------------------------------------------------
 5.0 - OBJECTS
 -------------------------------------------------------------- */
 
 @media screen and (min-width: 768px) {     /*medium display */
+	
+	#seasonal {
+		float: left;
+	}
+
+	#seasonal header {
+		margin-top: 145px;
+		
+	} 
+	
+	#seasonal h3 {
+		letter-spacing: .25rem;
+		
+		
+	}
+	
+	#seasonal2 {
+		padding: 0;
+	}
+
+	p {
+		font-size: 1.25em;
+	}
+
+	nav ul li {
+		margin: 30px;
+	}
 }
 
 
@@ -100,7 +129,15 @@ nav li {
 @media screen and (min-width: 1024px) {    /*large display */
 
 	
+	p {
+		font-size: 1.15em;
+	}
+	
+	nav ul li {
+		margin: 50px;
+	}
 }
+
 
 
 /*--------------------------------------------------------------
@@ -118,6 +155,13 @@ nav li {
 	font-color: #1a1a1a;
 }
 
+.btn:visited {
+	color: #1a1a1a;
+}
+.btn:hover {
+	color: #CDE2E0;
+}
+
 
 /* -- HEADER -- */
 h1 {
@@ -128,6 +172,7 @@ h1 {
 h2 {
 	font-size: 1.5rem;
 	line-height: 1.75rem;
+	text-align: center;
 }
 
 h3 {
@@ -136,9 +181,26 @@ h3 {
 	margin: 20px;
 }
 
+#price p {
+	font-size: .6rem;
+	padding: 0;
+	margin-top: 5rem;
+	text-transform: uppercase;
+}
+
+#price span {
+	font-size: 2rem;
+	font-weight: 600;
+}
+header .btn {
+	margin-top: 4.75rem;
+}
+
+
 /* -- NAVIGATION -- */
 nav li {
 	text-transform: uppercase;
+	margin: 10px;
 }
 
 nav {
@@ -152,17 +214,36 @@ nav li a:hover {
 	color: #fff;
 }
 
-#98 p {
-	font-size: 6.25rem;
+#number p {
+	font-size: 5rem;
+	font-weight: 400;
+	line-height: 0;
+	text-align: right;
+	margin-top: 5.75rem;
+
+	
 }
 
+#number, #price {
+	float: left;
+
+}
+
+#house {
+	float: right;
+}
 #house p {
-	line-height: 1.25rem;
+	font-size: .75rem;
+	line-height: 1rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-top: 45px;
 }
 
-#about section div {
+#about section div{
 	padding: 150px 0;
 }
+
 
 #about a {
 	font-weight: 400;
@@ -182,13 +263,50 @@ nav li a:hover {
 	padding-right: 5px;
 }
 
+
 .origin {
 	text-transform: uppercase;
 	
 }
 
 .levels i {
-	margin: 2px;
+	margin: 0 2px;
+}
+
+.levels p {
+	margin: 0;
+	text-transform: uppercase;
+}
+
+
+.flavor p {
+	line-height: 1.25rem;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: .9rem;
+	margin-top: 3px;
+}
+
+.brew {
+	padding: 75px 0;
+	margin: 0;
+}
+
+footer p {
+	text-align: left;
+	text-transform: uppercase;
+}
+footer span {
+	font-weight: 600;
+}
+
+footer ul:first-child li {
+	margin-right: 20px;
+}
+
+footer ul {
+	padding-left: 0;
+	margin-left: 0;
 }
 /*--------------------------------------------------------------
 7.0 - UTILITIES
