@@ -75,6 +75,9 @@ p {
 
 }
 
+blockquote {
+	margin: 0;
+}
 
 /* -- FORMS -- */
 
@@ -88,39 +91,15 @@ nav li {
 	
 }
 
-
-
-/*--------------------------------------------------------------
-5.0 - OBJECTS
--------------------------------------------------------------- */
-
 @media screen and (min-width: 768px) {     /*medium display */
-	
-	#seasonal {
-		float: left;
-	}
 
-	#seasonal header {
-		margin-top: 145px;
-		
-	} 
-	
-	#seasonal h3 {
-		letter-spacing: .25rem;
-		
-		
-	}
-	
-	#seasonal2 {
-		padding: 0;
-	}
 
 	p {
-		font-size: 1.25em;
+		font-size: 1.25rem;
 	}
 
-	nav ul li {
-		margin: 30px;
+	blockquote {
+		background-color: #cde2e0;
 	}
 }
 
@@ -130,11 +109,46 @@ nav li {
 
 	
 	p {
-		font-size: 1.15em;
+		font-size: 1.15rem;
 	}
 	
-	nav ul li {
-		margin: 50px;
+	blockquote {
+		background-color: transparent;
+	}
+}
+
+/*--------------------------------------------------------------
+5.0 - OBJECTS
+-------------------------------------------------------------- */
+
+.wrapper {
+	width: 90%;
+}
+
+#about.wrapper {
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {     /*medium display */
+
+
+	.wrapper, #about.wrapper {
+		width: 90%;
+	}
+
+
+}
+
+@media screen and (min-width: 1024px) {    /*large display */
+
+	
+	p {
+		font-size: 1.15rem;
+	}
+	
+	#centerblock {
+		margin: 0 auto;
+		float: none;
 	}
 }
 
@@ -184,7 +198,6 @@ h3 {
 #price p {
 	font-size: .6rem;
 	padding: 0;
-	margin-top: 5rem;
 	text-transform: uppercase;
 }
 
@@ -192,6 +205,11 @@ h3 {
 	font-size: 2rem;
 	font-weight: 600;
 }
+
+#price + .col-sm-6 p {
+	margin-top: 0;
+}
+
 header .btn {
 	margin-top: 4.75rem;
 }
@@ -215,33 +233,27 @@ nav li a:hover {
 }
 
 #number p {
-	font-size: 5rem;
+	font-size: 4.5rem;
 	font-weight: 400;
-	line-height: 0;
 	text-align: right;
-	margin-top: 5.75rem;
+	margin: 0;
+	
+	line-height: 6rem;
 
 	
 }
 
-#number, #price {
-	float: left;
-
-}
-
-#house {
-	float: right;
-}
 #house p {
 	font-size: .75rem;
 	line-height: 1rem;
 	text-transform: uppercase;
 	font-weight: 600;
-	margin-top: 45px;
+	margin: 0;
 }
 
-#about section div{
+#about section {
 	padding: 150px 0;
+	background-clip: border-box;
 }
 
 
@@ -254,6 +266,11 @@ nav li a:hover {
 	color: #cde2e0;
 }
 
+#about .bg-pnk {
+	margin-bottom: 0;
+	
+	
+}
 #roasts h2 {
 	padding: 20px 0;
 }
@@ -308,10 +325,69 @@ footer ul {
 	padding-left: 0;
 	margin-left: 0;
 }
+
+@media screen and (min-width: 768px) {     /*medium display */
+	
+	#number {
+		margin-left: calc(100%*1/12);
+	}
+	
+	#seasonal {
+		float: left;
+	}
+
+	#seasonal header {
+		margin-top: 145px;
+		
+	} 
+	
+	#seasonal h3 {
+		letter-spacing: .25rem;
+		
+		
+	}
+	
+	#process {
+		background-color: transparent;
+	}
+	
+	#seasonal2 {
+		padding: 0;
+	}
+
+
+
+	nav ul li {
+		margin: 30px;
+	}
+}
+
+
+
+@media screen and (min-width: 1024px) {    /*large display */
+
+	
+
+	nav ul li {
+		margin: 50px;
+	}
+	
+	#process {
+		background-color: #cde2e0;
+	}
+}
+
+
 /*--------------------------------------------------------------
 7.0 - UTILITIES
 -------------------------------------------------------------- */
-
+.border {
+   
+	margin-top: 7em;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    padding: 20px 0px;
+}
 
 /* -- ALIGNMENT -- */
 
