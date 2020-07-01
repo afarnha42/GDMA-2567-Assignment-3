@@ -63,9 +63,11 @@ html {
 4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
-a {
+a, a:visited {
 	text-decoration: none;
 }
+
+
 
 p {
 	font-weight: 300;
@@ -77,11 +79,29 @@ p {
 
 blockquote {
 	margin: 0;
+	padding: 200px 0;
 }
 
+
+
+
 /* -- FORMS -- */
+form p {
+	margin: 0;
+	text-align: center;
+}
 
+#submit {
+	color: #cde2e0;
+}
 
+#submit:hover {
+	color: #fff;
+}
+
+input {
+	padding: 10px 100px;
+}
 /* -- LISTS -- */
 li {
 	display: inline-block;
@@ -100,6 +120,7 @@ nav li {
 
 	blockquote {
 		background-color: #cde2e0;
+		background-clip: content-box;
 	}
 }
 
@@ -136,6 +157,11 @@ nav li {
 		width: 90%;
 	}
 
+	#centerblock {
+		margin: 0 auto;
+		float: none;
+	}
+	
 
 }
 
@@ -146,10 +172,7 @@ nav li {
 		font-size: 1.15rem;
 	}
 	
-	#centerblock {
-		margin: 0 auto;
-		float: none;
-	}
+
 }
 
 
@@ -173,8 +196,9 @@ nav li {
 	color: #1a1a1a;
 }
 .btn:hover {
-	color: #CDE2E0;
+	color: #ffe3e5;
 }
+
 
 
 /* -- HEADER -- */
@@ -194,6 +218,8 @@ h3 {
 	letter-spacing: .25rem;
 	margin: 20px;
 }
+
+
 
 #price p {
 	font-size: .6rem;
@@ -225,6 +251,10 @@ nav {
 	align-content: center;
 }
 
+nav ul {
+	margin: 0;
+	padding: 0;
+}
 nav li a {
 	color: #1a1a1a;
 }
@@ -233,7 +263,7 @@ nav li a:hover {
 }
 
 #number p {
-	font-size: 4.5rem;
+	font-size: 4rem;
 	font-weight: 400;
 	text-align: right;
 	margin: 0;
@@ -255,6 +285,23 @@ nav li a:hover {
 	background-clip: border-box;
 }
 
+#process section {
+	padding: 0;
+}
+
+
+#about section p, blockquote p {
+	margin: 0 20px;
+}
+
+blockquote p {
+	line-height: 1.5rem;
+}
+
+#centerblock>p {
+	padding-top: 100px;
+}
+
 
 #about a {
 	font-weight: 400;
@@ -270,6 +317,11 @@ nav li a:hover {
 	
 	
 }
+
+blockquote footer a {
+	text-transform: lowercase;
+	text-align: center;
+}
 #roasts h2 {
 	padding: 20px 0;
 }
@@ -279,6 +331,9 @@ nav li a:hover {
 	padding-right: 5px;
 }
 
+.bg-pnk {
+	background-clip: border-box;
+}
 
 .origin {
 	text-transform: uppercase;
@@ -299,7 +354,7 @@ nav li a:hover {
 	line-height: 1.25rem;
 	text-align: left;
 	text-transform: uppercase;
-	font-size: .9rem;
+	font-size: .8rem;
 	margin-top: 3px;
 }
 
@@ -308,10 +363,23 @@ nav li a:hover {
 	margin: 0;
 }
 
+#process {
+	margin: 0;
+	padding-top: 0px;
+}
+
+.bg-teal section {
+	padding: 4rem 0;
+}
+
+
 footer p {
 	text-align: left;
 	text-transform: uppercase;
 }
+
+footer p:nth-child()
+
 footer span {
 	font-weight: 600;
 }
@@ -322,8 +390,36 @@ footer ul:first-child li {
 
 footer ul {
 	padding-left: 0;
-	margin-left: 0;
+	margin: 0;
+	text-align: left;
 }
+
+
+
+footer li a, footer li a:visited {
+	color: #fff;
+}
+
+footer li a:hover {
+	color: #cde2e0;
+}
+
+#bot-ban {
+	font-size: .75rem;
+}
+
+#connect {
+	padding-top: 20px;
+}
+
+
+
+blockquote footer p {
+	text-transform: lowercase;
+	text-align: center;
+}
+
+
 
 @media screen and (min-width: 768px) {     /*medium display */
 	
@@ -331,14 +427,14 @@ footer ul {
 		margin-left: calc(100%*1/12);
 	}
 	
+	header .border a {
+		margin-right: calc(100%*1/12);
+	}
+	
 	#seasonal {
 		float: left;
 	}
 
-	#seasonal header {
-		margin-top: 145px;
-		
-	} 
 	
 	#seasonal h3 {
 		letter-spacing: .25rem;
@@ -346,13 +442,17 @@ footer ul {
 		
 	}
 	
+
+	
+	
+	 
+	
 	#process {
 		background-color: transparent;
 	}
 	
-	#seasonal2 {
-		padding: 0;
-	}
+
+	
 
 
 
@@ -374,6 +474,15 @@ footer ul {
 	#process {
 		background-color: #cde2e0;
 	}
+	
+	#seasonal h2 {
+		margin-top: 14rem;
+		
+	} 
+	
+	#eve {
+		margin-top: 12rem;
+	}
 }
 
 
@@ -385,7 +494,27 @@ footer ul {
 	margin-top: 2rem;
     border-top: 4px solid #1a1a1a;
     border-bottom: 4px solid #1a1a1a;
-    padding: 20px 0px;
+    padding: 20px 0px 0px;
+}
+
+@media screen and (min-width: 768px) {     /*medium display */
+	
+	.border {
+		margin-top: 8rem; 
+	}
+	
+	.kern {
+		letter-spacing: -.1rem;
+	}
+}
+
+
+
+@media screen and (min-width: 1024px) {    /*large display */
+
+	.border {
+		
+	}
 }
 
 /* -- ALIGNMENT -- */
@@ -394,15 +523,29 @@ footer ul {
 /* -- COLOR -- */
 .bg-teal {
 	background-color: #CDE2E0;
+
+	
 }
 .bg-pnk {
 	background-color: #ffe3e5;
+	
 }
 
 .bg-blk {
 	background-color: #1a1a1a;
 	color: #fff;
 }
+
+.bold, .bold:visited {
+	font-weight: 800;
+	color: #fff;
+}
+
+.bold:hover {
+	color: #ffe3e5;
+}
+
+
 
 /* -- SIZE -- */
 
