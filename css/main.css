@@ -189,7 +189,7 @@ nav li {
 	text-transform: uppercase;
 	border-bottom: solid 5px;
 	font-weight: 800;
-	font-color: #1a1a1a;
+	color: #1a1a1a;
 }
 
 .btn:visited {
@@ -378,7 +378,7 @@ footer p {
 	text-transform: uppercase;
 }
 
-footer p:nth-child()
+
 
 footer span {
 	font-weight: 600;
